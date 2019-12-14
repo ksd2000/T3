@@ -1,0 +1,159 @@
+#load {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url(images/ajax-loader.gif);
+    width: 43px;
+    height: 11px;
+    text-indent: -9999em;
+}
+
+.home_town,
+.town_txt1,
+.town_txt2,
+.propose {
+    padding: 0 9%;
+}
+
+// home_town
+.home_town {
+    text-align: center;
+    margin-bottom: 160px;
+    img {
+        border-radius: 5px;
+    }
+}
+.home_town_town {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid rgb(235, 235, 235);
+    border-left: 3px solid rgb(235, 235, 235);
+    border-bottom: 3px solid rgb(235, 235, 235);
+    position: absolute;
+    top: 40vw;
+    left: 76%;
+    text-align: left;
+    font-family: 'Lato Bold';
+    font-size: 24px;
+    color: rgb(255, 134, 15);
+    line-height: 38px;
+    padding: 44px 0;
+    padding-left: 20px;
+        .fa-star {
+        font-size: 22px;
+        color: rgb(255, 134, 15);
+    }
+    span {
+        font-family: 'Lato Bold';
+        font-size: 16px;
+        color: black;
+    }
+}
+.town_txt1 {
+    width: 90%;
+    margin-bottom: 40px;
+    h1 {
+        font-size: 24px;
+        color: black;
+        span {
+            color: rgb(255, 134, 15);
+        }
+    }
+    h3 {
+        color: rgb(127, 127, 127);
+    }
+}
+.town_unique {
+    float: left;
+    width: 380px;
+    margin-bottom: 50px;
+    h1 {
+        font-size: 24px;
+        color: black;
+    }
+    h3 {
+        color: rgb(127, 127, 127);
+    }
+}
+.town_waktu {
+    float: right;
+    width: 160px;
+    h1 {
+        font-size: 24px;
+        color: black;
+    }
+    h3 {
+        color: rgb(127, 127, 127);
+    }
+}
+.propose {
+    font-family: 'Lato Bold';
+    h1 {
+        font-size: 24px;
+        color: black;
+        margin-bottom: 30px;
+        span {
+            color: rgb(255, 134, 15);
+        }
+    }
+    .propose_card {
+        height: 200px;
+        width: 300px;
+        background: white;
+        border-radius: 5px;
+        padding-top: 76px;
+        border: 2px solid rgb(235, 235, 235);
+        cursor: pointer;
+    }
+    .propose_traveloka {
+        font-size: 37px;
+        @extend .propose_card;
+        text-align: center;
+        img {
+            height: 35px;
+            position: relative;
+            top: -11px;
+            left: -15px;
+        }
+    }
+    .propose_tiket {
+        font-size: 37px;
+        @extend .propose_card;
+        color: rgb(20, 97, 155);
+        text-align: center;
+        img {
+            height: 35px;
+            position: relative;
+            top: 5px;
+        }
+        span {
+            font-size: 24px;
+        }
+    }
+    .propose_tripadvisor {
+        @extend .propose_card;
+        font-size: 32px;
+        span {
+            color: rgb(22, 176, 136);
+        }
+        img {
+            height: 45px;
+            position: relative;
+            top: -30px;
+            left: 118px;
+        }
+    }
+    a {
+        float: left;;
+        text-decoration: none;
+        margin-left: 3%;
+        margin-bottom: 30px;
+    }
+}
+.propose_list {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}

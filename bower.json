@@ -1,0 +1,23 @@
+{
+  "name": "t3",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ksd2000 <ksd2000@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "font-awesome": "^5.11.2",
+    "normalize-css": "^8.0.1"
+  }
+}

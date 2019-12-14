@@ -1,0 +1,631 @@
+@media screen and (min-width: 1201px) {
+    .province {
+        li {
+            &:nth-child(5n+1) {
+                margin-left: 7%;
+            }
+            &:nth-child(5n+5) {
+                width: 124px;// 112 114  85  130 124
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+    .province {
+        li {
+            &:nth-child(5n+1) {
+                margin-left: 7%;
+            }
+            &:nth-child(5n+5) {
+                width: 124px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .header_top,
+    .header_menu,
+    .inf {
+        padding: 0 4%;
+    }
+    .menu_nav {
+        float: none;
+        margin-top: 45px;
+    }
+    .menu_nav_item_link {
+        padding: 10px 10px;
+    }
+
+    .province {
+        margin: 50px 0;
+        li {
+            width:24%;
+            height: 40px;
+            &:nth-child(4n+1) {
+                margin-left: 7%;
+            }
+            &:nth-child(4n+4) {
+                width: 124px;
+            }
+            a {
+                padding: 5px;
+            }
+        }
+    }
+
+    .illustration {
+        margin-bottom: 70px;
+    }
+    .illustration_place {
+        h2 {
+            line-height: 3vw;
+            font-size: 1.8vw;
+            padding-top: 5px;
+        }
+    }
+
+    .inf {
+        padding-top: 20px;
+    }
+    .inf_bantuan {
+        margin-left: 10%;
+        height: auto;
+        a {
+            line-height: 35px;
+        }
+    }
+    .inf_kerjasama {
+        float: right;
+        margin-left: 10%;
+        height: auto;
+    }
+    .inf_informasi {
+        float: none;
+        clear: both;
+        h2 {
+            display: none;
+        }
+        h3 {
+            padding-top: 15px;
+        }
+        .telephon {
+            float: none;
+        }
+    }
+    .social {
+        padding-top: 0;
+        position: relative;
+        left: 300px;
+        bottom: 40px;
+    }
+    .fa-twitter,
+    .fa-facebook,
+    .fa-instagram {
+        font-size: 25px;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+    .header_top,
+    .header_menu,
+    .inf {
+        padding: 0 4%;
+    }
+    .telephon,
+    .email {
+    line-height: 50px;
+    font-size: 16px;
+    }
+    .email {
+        margin-left: 50px;
+    }
+    .language {
+        font-size: 16px;
+        line-height: 36px;
+        .language_butn {
+            width: 160px;
+        }
+    }
+    .language_select {
+        width: 160px;
+        padding: 0;
+        top: 50px;
+        option {
+            height: 36px;
+            padding: 15px 0 0 10px;
+            z-index: 10;
+        }
+    }
+    .ru {
+        background: url('../img/flag_russia.png') no-repeat 100px 16px;
+    }
+    .ind {
+        background: url('../img/flag_indonezia.png') no-repeat 100px 16px;
+    }
+
+    .menu_nav {
+        float: none;
+        margin-top: 0;
+        position: absolute;
+        top: 140px;
+        .menu_nav_item {
+            display: inline;
+        }
+    }
+    .menu_nav_item_link {
+        font-size: 15px;
+        color: white;
+        padding: 15px;
+        border: 1px solid rgb(250, 157, 64);
+        border-radius: 25px;
+        &:hover {
+            color: rgb(250, 157, 64);
+            border: 1px solid rgb(250, 157, 64);
+        }
+    }
+
+    .home {
+        background: url('../img/home.png') no-repeat;
+        text-align: left;
+        background-size: contain;
+        .home_txt {
+            width: 290px;
+            padding-top: 15vw;
+            h1 {
+                font-size: 25px;
+            }
+        }
+    }
+    .province_butn {
+        display: block;
+    }
+    .province {
+        display: none;
+    }
+
+    .illustration {
+        margin-bottom: 70px;
+        margin-top: 15px;
+    }
+    .illustration_place {
+        h2 {
+            line-height: 3vw;
+            font-size: 1.8vw;
+            padding-top: 5px;
+        }
+    }
+ 
+    .inf {
+        padding-top: 20px;
+    }
+    .inf_visit {
+        display: none;
+    }
+    .inf_bantuan {
+        width: 95px;
+        height: auto;
+        margin: 0;
+        h2 {
+            margin-bottom: 0;
+        }
+        a {
+            padding: 15px 5px;
+            line-height: 50px;
+
+        }
+    }
+    .inf_kerjasama {
+        float: left;
+        width: 140px;
+        margin-left: 10%;
+        height: auto;
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+    .inf_kerjasama_tripadvisor {
+        margin-bottom: 10px;
+    }
+    .inf_informasi {
+        float: right;
+        margin-top: 0;
+        h2 {
+            display: none;
+        }
+        .telephon {
+            margin-bottom: 5px;
+            padding: 8px 0;
+        }
+        .email {
+            padding: 8px 0;
+        }
+    }
+    .social {
+        padding-top: 10px;
+    }
+    .fa-twitter,
+    .fa-facebook,
+    .fa-instagram {
+        font-size: 30px;
+        margin-right: 15px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 640px) and (min-width: 320px) {
+    .header_top,
+    .header_menu,
+    .inf {
+        padding: 0 4%;
+    }
+
+    .telephon,
+    .email {
+    display: none;
+    }
+
+    .language {
+        float: none;
+        font-size: 16px;
+        line-height: 36px;
+        .language_butn {
+            width: 160px;
+            padding: 5px;
+        }
+    }
+    .language_select {
+        width: 160px;
+        padding: 0;
+        top: 45px;
+        option {
+            height: 36px;
+            padding: 15px 0 0 10px;
+            z-index: 10;
+        }
+    }
+    .ru {
+        background: url('../img/flag_russia.png') no-repeat 100px 16px;
+    }
+    .ind {
+        background: url('../img/flag_indonezia.png') no-repeat 100px 16px;
+    }
+
+    .header_menu {
+        margin-bottom: 0;
+    }
+
+    .logo {
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    .menu_butn {
+        display: block;
+    }
+    .menu_nav {
+        display: none;
+        float: none;
+        margin-top: 0;
+        .menu_nav_item {
+            display: block;
+            padding-right: 0;
+            margin: 0 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .menu_nav_item_link {
+        font-size: 16px;
+        padding: 12px;
+        &:hover {
+            border-bottom: none;
+        }
+    }
+
+    .menu_search{
+        float: none;
+        height: 40px;
+        margin-bottom: 20px;
+        .fa-search {
+            padding-left: 10px;
+            padding-top: 9px;
+        }
+        input {
+            font-size: 16px;
+            height: 30px;
+            width: 147px;
+            margin-left: 5px;
+            padding-left: 5px;
+        }
+    }
+
+    .home {
+        display: none;
+    }
+    .province_butn {
+        display: block;
+        width: 200px;
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .province {
+        display: none;
+    }
+
+    .illustration {
+        padding: 0 4%;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .illustration_place {
+        float: none;
+        height: 300px;
+        width: 100%;
+        margin-bottom: 5vw;
+        h2 {
+            line-height: 25px;
+        }
+        h3 {
+            margin-top: 0;
+        }
+    }
+    .illustration_column1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+ 
+    .inf {
+        padding-top: 20px;
+    }
+    .inf_visit {
+        display: none;
+    }
+    .inf_bantuan {
+        width: 110px;
+        height: auto;
+        margin: 0;
+        h2 {
+            margin-bottom: 0;
+        }
+        a {
+            padding: 15px 5px;
+            line-height: 50px;
+        }
+    }
+    .inf_kerjasama {
+        float: left;
+        width: 140px;
+        margin-left: 10%;
+        height: auto;
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+    .inf_kerjasama_tripadvisor {
+        margin-bottom: 10px;
+    }
+
+    .inf_informasi {
+        float: none;
+        margin-top: 0;
+        width: 222px;
+        .telephon,
+        .email {
+            display: block;
+        }
+        .telephon {
+            margin-bottom: 5px;
+            padding: 8px 0;
+        }
+        h2 {
+            display: none;
+        }
+        .email {
+            margin-left: 0;
+            padding: 8px 0;
+        }
+    }
+    .social {
+        padding-top: 5px;
+    }
+    .fa-twitter,
+    .fa-facebook,
+    .fa-instagram {
+        font-size: 30px;
+        margin-right: 15px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .header_top,
+    .header_menu,
+    .inf {
+        padding: 0 4%;
+    }
+
+    .telephon,
+    .email {
+    display: none;
+    }
+
+    .language {
+        float: none;
+        font-size: 16px;
+        line-height: 36px;
+        .language_butn {
+            width: 160px;
+            padding: 5px;
+        }
+    }
+    .language_select {
+        width: 160px;
+        padding: 0;
+        top: 45px;
+        option {
+            height: 36px;
+            padding: 15px 0 0 10px;
+            z-index: 10;
+        }
+    }
+    .ru {
+        background: url('../img/flag_russia.png') no-repeat 100px 16px;
+    }
+    .ind {
+        background: url('../img/flag_indonezia.png') no-repeat 100px 16px;
+     }
+
+    .header_menu {
+        margin-bottom: 0;
+    }
+
+    .logo {
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    .menu_butn {
+        display: block;
+    }
+    .menu_nav {
+        display: none;
+        float: none;
+        margin-top: 0;
+        .menu_nav_item {
+            display: block;
+            padding-right: 0;
+            margin: 0 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .menu_nav_item_link {
+        font-size: 16px;
+        padding: 12px;
+        &:hover {
+            border-bottom: none;
+        }
+    }
+
+    .menu_search{
+        float: none;
+        height: 40px;
+        margin-bottom: 20px;
+        .fa-search {
+            padding-left: 10px;
+            padding-top: 9px;
+        }
+        input {
+            font-size: 16px;
+            height: 30px;
+            width: 147px;
+            margin-left: 5px;
+            padding-left: 5px;
+        }
+    }
+
+    .home {
+        display: none;
+    }
+    .province_butn {
+        display: block;
+        width: 200px;
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .province {
+        display: none;
+    }
+
+    .illustration {
+        padding: 0 4%;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .illustration_place {
+        float: none;
+        height: 250px;
+        width: 100%;
+        margin-bottom: 5vw;
+        h2 {
+            line-height: 25px;
+        }
+        h3 {
+            margin-top: 0;
+        }
+    }
+    .illustration_column1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+ 
+    .inf {
+        padding-top: 20px;
+    }
+    .inf_visit {
+        display: none;
+    }
+    .inf_bantuan {
+        float: none;
+        width: 95px;
+        height: auto;
+        margin: 0;
+        margin-left: 10%;
+        h2 {
+            margin-bottom: 0;
+        }
+        a {
+            padding: 15px 5px;
+            line-height: 50px;
+        }
+    }
+    .inf_kerjasama {
+        float: none;
+        width: 140px;
+        margin-left: 10%;
+        height: auto;
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+    .inf_kerjasama_tripadvisor {
+        margin-bottom: 10px;
+    }
+
+    .inf_informasi {
+        float: none;
+        margin-top: 0;
+        width: 222px;
+        .telephon,
+        .email {
+            display: block;
+        }
+        .telephon {
+            margin-bottom: 5px;
+            padding: 8px 0;
+        }
+        h2 {
+            display: none;
+        }
+        .email {
+            margin-left: 0;
+            padding: 8px 0;
+        }
+    }
+    .social {
+        padding-top: 5px;
+    }
+    .fa-twitter,
+    .fa-facebook,
+    .fa-instagram {
+        font-size: 30px;
+        margin-right: 15px;
+        padding: 10px 15px;
+    }
+}
+
+// page "town"
+@import "css/_respons_town";

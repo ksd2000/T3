@@ -1,0 +1,75 @@
+@media screen and (min-width: 1201px) {
+    
+}
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .home_town,
+    .town_txt1,
+    .town_txt2,
+    .propose {
+        padding: 0 4%;
+    }
+    .home_town {
+        margin-bottom: 120px;
+    }
+    .home_town_town {
+        top: 52vw;
+        left: 72%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+    .town_txt1,
+    .town_txt2,
+    .propose {
+        padding: 0 4%;
+    }
+    .home_town {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+    .home_town_town {
+        top: 52vw;
+        left: 67%;
+    }
+}
+
+@media screen and (max-width: 640px) and (min-width: 320px) {
+    .town_txt1,
+    .town_txt2,
+    .propose {
+        padding: 0 4%;
+    }
+    .home_town { 
+        img {
+            display: none;
+        }
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .home_town_town {
+        position: unset;
+    }
+    .town_unique {
+        float: none;
+        margin-bottom: 30px;
+    }
+    .town_waktu {
+        float: none;
+        margin-bottom: 30px;
+    }
+    .propose {
+        h1 {
+
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 319px) {
+
+}

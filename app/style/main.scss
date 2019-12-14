@@ -1,0 +1,428 @@
+@font-face { 
+    font-family: 'Lato Bold'; 
+    src: url('../fonts/Lato_Bold.ttf')  format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+//
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    font-family: 'Lato Bold';
+    font-size: 34px;
+    color: white;
+}
+h2 {
+    font-family: 'Lato Bold';
+    font-size: 18px;
+    color: black;
+}
+h3 {
+    font-family: 'Lato Bold'; 
+    font-size: 14px;
+    color: white;
+    line-height: 20px;
+}
+
+// page "town"
+@import "css/_town";
+
+//
+.header_top,
+.header_menu,
+.illustration,
+.inf {
+    padding: 0 9%;
+}
+
+// header
+
+.header_top {
+    background-color: rgb(51, 89,255);
+}
+.telephon,
+.email {
+    float: left;
+    @extend h3;
+    text-decoration: none;
+    line-height: 30px;
+}
+.fa-phone,
+.fa-envelope-o {
+    padding-right: 7px;
+}
+.email {
+    margin-left: 30px;
+}
+
+.language {
+    float: right;
+    @extend h3;
+    .language_butn {
+        width: 120px;
+        padding: 7px 0 0 5px;
+        background-size: 17%;
+        cursor: pointer;
+        &:after {
+            float: right;
+            font-family: 'FontAwesome';
+            content: "\f078";
+            font-size: 12px;
+        }
+    }
+}
+.language_select {
+    display: none;
+    position: absolute;
+    top: 30px;
+    width: 120px;
+    height: auto;
+    font-family: 'Lato Bold';
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 20;
+    option {
+        height: 30px;
+        padding: 7px 0 0 5px;
+    }
+}
+.ru {
+    background: url('../img/flag_russia.png') no-repeat 75px 8px;
+    background-size: 17%;
+}
+.ind {
+    background: url('../img/flag_indonezia.png') no-repeat 75px 8px;
+    background-size: 17%;
+}
+                //menu
+.header_menu {
+    margin: 20px 0;
+}
+.logo {
+    float: left;
+    font-family: 'Lato Bold'; 
+    font-size: 20px;
+    span {
+        color: rgb(255, 132, 16);
+    }
+}
+
+.menu_nav {
+    float: right;
+    margin-top: 8px;
+    .menu_nav_item {
+        display: inline;
+        padding-right: 25px;
+    }
+}
+.menu_nav_item_link {
+    font-family: 'Lato Bold'; 
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    &:hover {
+        color: rgb(255, 134, 15);
+        border-bottom: 2px solid rgb(255, 134, 15);
+    }
+}
+
+.menu_butn {
+    display: none;
+    font-family: 'Lato Bold'; 
+    font-size: 16px;
+    color: rgb(127, 127, 127);
+    padding: 11px;
+    margin-bottom: 20px;
+    width: 200px;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 15px;
+    cursor: pointer;
+    &:hover {
+        color: rgb(255, 134, 15);
+        border: 2px solid rgb(255, 134, 15);
+    }
+}
+
+.menu_search{
+    float: right;
+    width: 200px;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 15px;
+    .fa-search {
+        color: rgb(158, 158, 158);
+        padding-left: 10px;
+    }
+    input {
+        height: 30px;
+        width: 147px;
+        margin-left: 5px;
+        border: none;
+        outline: none;
+        padding-left: 5px;
+    }
+}
+
+// home
+.home {
+    height: 31.1vw;
+    background: url('../img/home.png') no-repeat;
+    background-size: contain;
+    text-align: -webkit-center;
+    .home_txt {
+        width: 380px;
+        text-align: center;
+        padding-top: 8.65vw;
+    }
+}
+
+.province {
+    margin: 65px 0;
+    li {
+        display:block;
+        float:left;
+        width:19%;
+        height: 34px;
+        a {
+            font-family: 'Lato Bold'; 
+            font-size: 14px;
+            color: rgb(127, 127, 127);
+            text-decoration: none;
+            padding: 5px;
+            &:hover {
+                color: rgb(255, 134, 15);
+            }
+        }
+    }
+}
+
+.province_butn {
+    display: none;
+    font-family: 'Lato Bold'; 
+    font-size: 14px;
+    line-height: 16x;
+    color: rgb(127, 127, 127);
+    padding: 5px 10px;
+    margin-left: 4%;
+    margin-top: 5px;
+    width: 178px;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 15px;
+    cursor: pointer;
+    &:hover {
+        color: rgb(255, 134, 15);
+        border: 2px solid rgb(255, 134, 15);
+    }
+}
+.province_select{
+    display: none;
+    position: absolute;
+    @extend h3;
+    color: rgb(127, 127, 127);
+    overflow-y: auto;
+    margin-left: 5px;
+    border: none;
+    outline: none;   
+    option {
+
+        height: 36px;
+        width: 123px;
+        padding-top: 20px;
+        padding-left: 5px;
+        margin-left: 16px;
+        cursor: pointer;
+        &:hover {
+            background: rgb(233, 188, 105);
+        }
+    }
+}
+
+// section illustration
+.illustration {
+    margin-bottom: 470px;
+}
+.illustration_place {
+    float: left;
+    height: 31vw;
+    width: 30.7%;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    img {
+        border-radius: 8px;
+    }
+    h2 {
+        line-height: 40px;
+    }
+    h3 {
+        color: rgb(127, 127, 127);
+        margin-top: 10px;
+        
+    }
+    .fa-map-marker {
+        font-size: 16px;
+        padding-left: 5px;
+    }
+}
+.illustration_place_rating {
+    font-family: 'Lato Bold';
+    font-size: 12px;
+    margin-top: 10px;
+    &:before {
+        font-family: 'FontAwesome';
+        content: "\f005  \f123  \f006";
+        font-size: 18px;
+        color: rgb(255, 134, 15);
+    }
+}
+.illustration_column1 {
+    margin: 0 3.8%;
+}
+                // switch section
+.switch {
+    text-align: center;
+    font-family: 'Lato Bold'; 
+    font-size: 14px;
+    color: black;
+    li {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        padding-top: 13px;
+        a {
+            font-family: 'Lato Bold'; 
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+            padding: 12px 14px;
+        }
+        &:hover {
+        background: rgb(51, 89,255);
+        border-radius: 50%;
+        }
+    }
+}
+
+// footer
+
+.inf {
+    @extend h3;
+    background: rgb(51, 89,255);
+    padding-top: 60px;
+    h2 {
+        color: white;
+        margin-bottom: 40px;
+    }
+    h3 {
+        color: rgb(214, 222, 255);
+    }
+}
+
+.inf_visit {
+    float: left; ;
+    width: 250px;
+    .inf_visit_logo {
+        margin-bottom: 40px;
+        width: 242px;
+        float: none;
+    }
+}
+.inf_bantuan {
+    float: left;
+    height: 230px;
+    width: 84px;
+    margin-left: 2%;
+    a{
+        font-family: 'Lato Bold';
+        font-size: 14px;
+        line-height: 21px;
+        color: rgb(214, 222, 255);
+        text-decoration: none;
+    }
+}
+.inf_kerjasama {
+    float: left;
+    height: 230px;
+    width: 205px;
+    margin-left: 2%;
+    font-family: 'Lato Bold';
+    color: black;
+    a {
+        text-decoration: none;
+    }
+}
+.card {
+    height: 45px;
+    width: 97px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+}
+.inf_kerjasama_traveloka {
+    @extend .card;
+    margin-bottom: 10px;
+    img {
+        height: 10px;
+        position: relative;
+        top: -5px;
+        left: -5px;
+    }
+}
+.inf_kerjasama_tiket {
+    @extend .card;
+    margin-bottom: 10px;
+    color: rgb(20, 97, 155);
+    img {
+        height: 10px;
+    }
+}
+.inf_kerjasama_tripadvisor {
+    @extend .card;
+    font-size: 12px;
+    span {
+        color: rgb(22, 176, 136);
+    }
+    img {
+        height: 8px;
+    }
+}
+
+.inf_informasi {
+    float: right;
+    width: 222px;
+    .email {
+        width: 222px;
+        margin-left: 0;
+    }
+}
+.social {
+    clear: both;
+    padding-top: 20px;
+}
+.fa-twitter,
+.fa-facebook,
+.fa-instagram {
+    font-size: 25px;
+    color: white;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.copyright {
+    height: 50px;
+    background: rgb(51, 89,255);
+    @extend h3;
+    line-height: 50px;
+    text-align: center;
+    border-top: 1px solid rgb(214, 222, 255);
+    span {
+        font-size: 20px;
+    }
+}
