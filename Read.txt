@@ -1,0 +1,3 @@
+запустить   npm install
+            bower install 
+            gulp
