@@ -24,7 +24,8 @@ var path = {
         css: 'dist/css/',
         cssInst: 'dist/css/lib/',
         img: 'dist/img/',
-        fonts: 'dist/fonts/'
+        fonts: 'dist/fonts/',
+        fontAwes: 'dist/css/'
     },
     app: { //откуда брать исходники
         html: 'app/*.html',
@@ -33,7 +34,8 @@ var path = {
         style: ['app/style/main.scss', 'app/style/responsive.scss'],
         styleInst: 'app/style/library/*.css',
         img: 'app/images/**/*.*',
-        fonts: 'app/fonts/**/*.*'
+        fonts: 'app/fonts/**/*.*',
+        fontAwes: 'app/style/font-awesome.css'
     },
     watch: { //за изменением каких файлов нужно наблюдать
         html: 'app/**/*.html',
@@ -41,8 +43,9 @@ var path = {
         jsInst: 'app/js/library/*.js',
         style: 'app/style/**/*.+(scss|css)',
         styleInst: 'app/style/library/*.css',
-        img: 'app/img/**/*.*',
-        fonts: 'app/fonts/**/*.*'
+        img: 'app/images/**/*.*',
+        fonts: 'app/fonts/**/*.*',
+        fontAwes: 'app/style/font-awesome.css'
     },
     clean: './dist'
 };
@@ -107,7 +110,7 @@ gulp.task('styleInst:dist', function () {  //cборка плагинов (scss)
         .pipe(reload({stream: true}));
 });
 
-gulp.task('image:dist', function () {  //Сборка картинок
+gulp.task('images:dist', function () {  //Сборка картинок
     return gulp.src(path.app.img) //Выберем наши картинки
         .pipe(imagemin({ //Сожмем их
             progressive: true,
@@ -124,14 +127,20 @@ gulp.task('fonts:dist', function() {  //Сборка шрифтов
         .pipe(gulp.dest(path.dist.fonts))
 });
 
+gulp.task('fontAwes:dist', function() {  //запись Awesome
+    return gulp.src(path.app.fontAwes)
+        .pipe(gulp.dest(path.dist.fontAwes))
+});
+
 gulp.task('dist', gulp.parallel(  // ЕДИНАЯ сборка
     'html:dist',
     'js:dist',
-  //  'jsInst:dist',
+    'jsInst:dist',
     'style:dist',
-  //  'styleInst:dist',
+    'styleInst:dist',
     'fonts:dist',
-  //  'image:dist'
+    'fontAwes:dist',
+    'images:dist'
 ));
 
 gulp.task('watch', function(){  //контроль изменений
@@ -140,8 +149,9 @@ gulp.task('watch', function(){  //контроль изменений
     gulp.watch(path.watch.styleInst, gulp.series('styleInst:dist'));
     gulp.watch(path.watch.js, gulp.series('js:dist'));
     gulp.watch(path.watch.jsInst, gulp.series('jsInst:dist'));
-    gulp. watch(path.watch.img, gulp.series('image:dist'));
+    gulp. watch(path.watch.img, gulp.series('images:dist'));
     gulp.watch(path.watch.fonts, gulp.series('fonts:dist'));
+    gulp.watch(path.watch.fonts, gulp.series('fontAwes:dist'));
 })
 
 gulp.task('webserver', function () {  //веб сервер
